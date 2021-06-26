@@ -4,7 +4,7 @@
 <br/>
 
 # Preview
-<a href="https://gpitso.github.io" target="_blank">https://gpitso.github.ioqaaa</a>
+<a href="https://gpitso.github.io/" target="_blank">https://gpitso.github.io</a>
 
 
 # License
