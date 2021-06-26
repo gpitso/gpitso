@@ -4,7 +4,7 @@
 <br/>
 
 # Preview
-<a href="https://rifatcholakov.github.io/Personal-Profile-Page/index.html" target="_blank">https://rifatcholakov.github.io/Personal-Profile-Page/index.html</a>
+<a href="https://gpitso.github.io" target="_blank">https://gpitso.github.ioqaaa</a>
 
 
 # License
