@@ -106,6 +106,53 @@ div.brackets a:hover:before, div.brackets a:hover:after
   #main {
       background-position: 40% 45%;
   }
+
+  div.navContainer a{
+    font-size: small !important;
+  }
+
+  #mainTextRight {
+    display: none;
+    margin: 0 auto;
+  }
+
+  #mainTextLeft{
+    width: 70% !important;
+    left: 15% !important;
+  }
+
+  #mainTextLeft h1 {
+    font-size: medium !important;
+  }
+
+  #mainTextLeft h2 {
+    font-size: larger !important;
+  }
+
+  #mainTextLeft h3 {
+    font-size: medium !important;
+  }
+
+  .aboutSection1 {
+    margin-bottom: 10% !important;
+  }
+
+  #about {
+    height:210vh !important;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  #experience {
+    height: 100vh !important;
+  }
+
+  .btn {
+    margin-top:5% !important;
+  }
+
 }
 
 #mainTextInfoEffect:hover {
@@ -582,12 +629,6 @@ footer .btn {
 footer .btn:hover {
   background-color: rgb(255, 115, 0);
   border-color: white;
-}
-
-@media (max-width: 768px) {
-  footer a {
-      display: none;
-  }
 }
 
 
