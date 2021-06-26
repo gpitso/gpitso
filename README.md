@@ -1,5 +1,6 @@
 # Personal Profile Page
-
+Welcome to my Personal Profile page.
+Click on the link below.
 <br/>
 <br/>
 
