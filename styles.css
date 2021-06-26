@@ -152,7 +152,6 @@ div.brackets a:hover:before, div.brackets a:hover:after
   .btn {
     margin-top:5% !important;
   }
-
 }
 
 #mainTextInfoEffect:hover {
@@ -196,6 +195,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 
 #mainTextLeft .typewriter h2 {
+  font-size: 2.6vw;
   color:white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(255, 115, 0); /* The typwriter cursor */
