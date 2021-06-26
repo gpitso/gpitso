@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Welcome to my Profile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+      <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script type="text/javascript">
+        function sendEmail (theForm) {
+          let name = theForm.name.value
+          let email = theForm.email.value
+          let body = theForm.body.value
+          console.log(`mailto:gpitso96@gmail.com?name=${name}&email=${email}&body=${body}`)
+          window.open(`mailto:gpitso96@gmail.com?name=${name}&email=${email}&body=${body}`);
+        }
+      </script>
+
+      <script type="text/javascript">
+        var uri = window.location.toString();
+        if (uri.indexOf("?") > 0) {
+            var clean_uri = uri.substring(0, uri.indexOf("?"));
+            window.history.replaceState({}, document.title, clean_uri);
+        }
+      </script>
+
+   </head>
+   <body>
+      <div id="main">
+         <div class="navContainer black brackets sticky">
+            <a href="#main">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#technologies">TECHNOLOGIES</a>
+            <a data-target="#extraLargeModal" href="#extraLargeModal" data-toggle="modal">CONTACT</a>
+         </div>
+         <div id="mainTextLeft" alt="George Pitsounis - Full Stack Web Developer">
+            <h1 class="mainTextInfo">HELLO, MY NAME IS</h1>
+            <div class="typewriter">
+               <h2>GEORGE PITSOUNIS</h2>
+            </div>
+            <h3 class="mainTextInfo">and i am a Junior Full Stack Developer.</h3>
+         </div>
+         <div id="mainTextRight" alt="Welcome to my Bio">
+            <h2 class="mainTextInfo"><span id="content1">Welcome</span><span id="content2">to my</span><span id="content3">&lt;<span id="content4"> Bio </span>/&gt;</span></h2>
+         </div>
+      </div>
+      <div id="scrolldown" class="scrolldownstyle">
+         <a href="#about"><span></span></a>
+      </div>
+      <div class="container-fluid" id="about" alt="About section">
+         <div class="container">
+            <h2 class="ml-auto" id="orangeHover">ABOUT</h2>
+            <hr class="w-100">
+         </div>
+         <div class="container">
+            <div class="row aboutSection aboutSection1" alt="Web developer">
+               <img src="images/pic1.jpg" alt="" srcset="" class="col-sm-12 col-md-3 align-self-center">
+               <div class="container-fluid col-sm-12 col-md-9 align-self-center aboutText paddingLeft">
+                  <h4 class="text-center text-md-left">FEW WORDS ABOUT ME</h4>
+                  <p class="text-justify text-md-left">Based in Athens, Greece. Graduated in Computer Science Department from the University Of Crete (CSD). 
+                     I am an urban traveller, passionate about good movies, tv-series. I like to think I am a mix of the places I have lived in and the people I have 
+                     met along the way. And so it is my way of working, easy going, honest, down to earth, never "overselling it" and a good communicator.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row aboutSection" alt="Hospitality and Project Manager">
+               <div class="container-fluid col-sm-12 col-md-9 align-self-center aboutText paddingRight">
+                  <h4 class="text-center text-md-left">WEB DEVELOPER</h4>
+                  <p class="text-justify text-md-left">Despite being "techno-geek" since my early teen years, i was not so much interested in the web development until i got  
+                     in the university and become truly interested in it. Especially when i created my first stable web application for my thesis written in ReactJS-NodeJS-MongoDB , i decided that i want to dive into the web technologies and find a job that will
+                     give me the experience that i needed. Everything became easier when the university offered me the opportunity to apply for an internship via the Erasmus program , I jumped to take the chance. All of a sudden, 
+                     I was in the Netherlands to start my first 6-month internship as a Full- Stack Developer at a company named Pluxbox. Pluxbox is a cloud-based software platform built specifically for the radio industry and around the day-to-day working processes involved.
+                     It brings together every element that a production team needs in a single location – enabling them to work in harmony. I had the chance to work both on this platform and on some other products, ordered by different clients, diving into
+                     Front-End technologies like HTML, CSS, Javascript, Typescript but also into Back-End tecnologies like NodeJS, GraphQL, MongoDB and Docker, Kubernetes. 
+                  </p>
+               </div>
+               <img src="images/pic2.jpg" alt="" srcset="" class="col-sm-12 col-md-3 align-self-center d-none d-md-block d-lg-block d-xl-block">
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid" id="experience" alt="experience">
+         <div class="container">
+            <h2 class="ml-auto white" id="orangeHover">WORK EXPERIENCE</h2>
+            <hr class="w-100 white" style="background-color: #eee;">
+         </div>
+         <div class="container experienceContainer">
+            <div class="row row-cols-1 row-cols-md-3" id="experienceExperienceContainer">
+               <div class="col mb-4 card1">
+                  <div class="card h-100">
+                     <img src="images/pluxbox_old.jpg" alt="Elisa Vidal Portfolio" class="card-img-top pluxbox">
+                     <div class="card-body">
+                        <h4 class="card-title">Full Stack Intern at Pluxbox</h4>
+                        <h5>( October 2020 - April 2021 )</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col mb-4 card2">
+                  <div class="card h-100">
+                     <img src="images/pluxbox_new.jpg" alt="Anne Uijttewaal portofolio" class="card-img-top pluxbox">
+                     <div class="card-body">
+                        <h4 class="card-title">Full Stack Developer at Pluxbox</h4>
+                        <h5>( April 2021 - Now )</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid" id="technologies" alt="technologies">
+         <div class="container">
+            <h2 class="ml-auto" id="orangeHover">TECHNOLOGIES</h2>
+            <hr class="w-100">
+         </div>
+         <div class="container technologiesSection">
+            <div class="row">
+               <img class="col-sm-6 col-md-3" src="images/technologies/html5.svg" alt="HTML 5" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+               <img class="col-sm-6 col-md-3" src="images/technologies/css3.svg" alt="CSS 3" data-toggle="tooltip" data-placement="bottom" title="CSS 3">
+               <img class="col-sm-6 col-md-3" src="images/technologies/bootstrap.svg" alt="Bootstrap" data-toggle="tooltip" data-placement="bottom" title="Bootstrap">
+               <img class="col-sm-6 col-md-3" src="images/technologies/javascript.svg" alt="Javascript" data-toggle="tooltip" data-placement="bottom" title="Javascript">
+            </div>
+            <div class="row">
+               <img class="col-sm-6 col-md-3" src="images/technologies/graphql.svg" alt="GraphQL" data-toggle="tooltip" data-placement="bottom" title="GraphQL">
+               <img class="col-sm-6 col-md-3" src="images/technologies/docker.svg" alt="Docker" data-toggle="tooltip" data-placement="bottom" title="Docker">
+               <img class="col-sm-6 col-md-3" src="images/technologies/node.svg" alt="Node.js" data-toggle="tooltip" data-placement="bottom" title="Node.js">
+               <img class="col-sm-6 col-md-3" src="images/technologies/git.svg" alt="Git" data-toggle="tooltip" data-placement="bottom" title="Git">
+            </div>
+         </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="extraLargeModal" class="modal fade" tabindex="-1" role="dialog">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="modalText">Contact me</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="container col-sm-12 col-md-6">
+                        <form id="contact-form" method="POST" role="form" action="javascript:;" onsubmit="sendEmail(this);">
+                           <div class="form-group">
+                              <label for="form_name">Name:</label>
+                              <input type="text" name="name" class="form-control name" placeholder="Full name" required="required">
+                           </div>
+                           <div class="form-group">
+                              <label for="form_email">E-mail Address:</label>
+                              <input type="email" name="email" class="form-control email" placeholder="E-mail address" required="required">
+                           </div>
+                           <div class="form-group">
+                              <label for="form_body">Message:</label>
+                              <textarea name="body" class="form-control body" placeholder="Hi George! I would like to hire you for a job!" rows="10" required="required"></textarea>
+                           </div>
+                           <div class="status">
+                           </div>
+                           <input type="submit" class="btn btn-outline-dark w-100 btn-send submit" id='modalSubmit' value="Send Email"> 
+                        </form>
+                     </div>
+                     <div class="container col-sm-12 col-md-6">
+                        <ul class="list-unstyled" id="infoModal">
+                           <li>
+                              <a href="https://www.linkedin.com/in/gewrgios-pitsounis-87ab69133/" alt="My Linkedin Profile" target="_blank"><i class="fab fa-linkedin"></i>/gewrgios-pitsounis-87ab69133</a>
+                           </li>
+                           <li>
+                              <a href="https://github.com/gpitso" alt="My githhub profile" target="_blank"><i class="fab fa-github"></i>/gpitso</a>
+                           </li>
+                           <li>
+                              <a href="CV-WebDeveloperDV.pdf" alt="Download my CV" target="_blank"><i class="fas fa-file-pdf"></i>Download my CV</a>
+                           </li>
+                           <li>
+                              <a href="mailto:gpitso96@gmail.com" alt="Email address" target="_blank"><i class="fas fa-envelope-square"></i>gpitso96@gmail.com</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <footer class="container-fluid inline-block" id="footer" alt="Footer"> 
+         <span>© 2021 Gewrgios Pitsounis</span>
+         <a href="https://www.linkedin.com/in/gewrgios-pitsounis-87ab69133" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+         <a href="https://github.com/gpitso" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+         <button type="button" data-target="#extraLargeModal" href="#extraLargeModal" data-toggle="modal" class="btn btn-outline-primary">Contact me</button>
+      </footer>
+   </body>
+</html>

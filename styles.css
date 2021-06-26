@@ -1,0 +1,593 @@
+/* Global Layout Set-up */
+
+/* Key Frames */
+
+/* General */
+
+* { 
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: #f7f5f0;
+}
+
+/* Nav Bar */
+
+div.navContainer
+{
+  background: rgb(32,33,36,0.9);
+  margin: 0 auto;
+  border: none;
+	padding: 1em 3em;
+  text-align: right;
+  z-index: 1;
+}
+
+.sticky {
+  top: 0;
+  width: 100%;
+}
+
+div.navContainer a
+{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 15px;
+    padding:0;  
+    z-index: 0;
+    cursor: pointer;
+}
+
+.black
+{
+    background: #202124;
+}
+
+.white{
+  color:white;
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    /* position: absolute; */
+    opacity: 0;
+    font-size: 20px;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+    color:rgb(255, 115, 0);
+    transition: all 1s;
+}
+
+.navContainer{
+  color:white;
+}
+
+div.brackets a:before
+{
+    content: '<';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: '/>';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#main {
+  background: url(images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #main {
+      background-position: 40% 45%;
+  }
+}
+
+#mainTextInfoEffect:hover {
+  transform: scale(1.15);
+  transition: transform .8s;
+}
+
+#mainTextLeft {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 1.5% 2% 2% 1.5%;
+  width:30%;
+  background-color: rgba(32, 33, 36, 0.5);
+  position: absolute;
+  top: 40%;
+  left: 0.3%;
+  border-radius: 5%;
+  text-align: left;
+} 
+
+#mainTextLeft h1 {
+  margin:0% 0% 1% 0%;
+  font-weight: lighter;
+  font-size: large;
+}
+
+#mainTextLeft h2 {
+  margin:0% 0% 5% 0%;
+  font-weight: bolder;
+  font-size: 3.3em;
+}
+
+#mainTextLeft h3 {
+  margin:0%;
+  font-weight: lighter;
+  font-size: large;
+}
+
+.mainTextInfo {
+  color:#EEEEEE;
+  background-size: 200%;
+}
+
+#mainTextLeft .typewriter h2 {
+  color:white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 115, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+#mainTextRight {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 1% 1% 1% 1%;
+  position: absolute;
+  top: 34%;
+  right: 12%;
+  border-radius: 5%;
+  text-align: left;
+} 
+
+#mainTextRight h2  #content1, #content2, #content3{
+  margin:0% 0% 5% 0%;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#mainTextRight h2 #content3{
+  color:rgb(255, 115, 0);
+}
+
+#mainTextRight h2 #content4{
+  color:white;
+}
+
+#mainTextRight h2 #content1::after{
+  content: "\a";
+  white-space: pre;
+}
+
+#mainTextRight h2 #content2::after{
+  content: "\a";
+  white-space: pre;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 115, 0); }
+}
+
+/* start scroll down */
+
+.scrolldownstyle a {
+  position: absolute;
+  bottom: 17.5%;
+  left: 50.5%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  transition: opacity .3s;
+}
+
+.scrolldownstyle a:hover {
+opacity: .5;
+}
+
+@media (max-width: 768px) {
+  #scrolldown a {
+      bottom: 10%;
+  }
+}
+
+#scrolldown a span {
+position: absolute;
+top: 0;
+left: 50%;
+width: 30px;
+height: 50px;
+margin-left: -15px;
+border: 2px solid #fff;
+border-radius: 50px;
+box-sizing: border-box;
+}
+
+#scrolldown a span::before {
+position: absolute;
+top: 10px;
+left: 50%;
+content: '';
+width: 6px;
+height: 6px;
+margin-left: -3px;
+background-color: #fff;
+border-radius: 100%;
+-webkit-animation: scrolldown 2s infinite;
+animation: scrolldown 2s infinite;
+box-sizing: border-box;
+}
+
+@-webkit-keyframes scrolldown {
+    0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+    }
+    40% {
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+    transform: translate(0, 0);
+    opacity: 0;
+    }
+    40% {
+    opacity: 1;
+    }
+    80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}@-webkit-keyframes scrolldown {
+  0% {
+  -webkit-transform: translate(0, 0);
+  opacity: 0;
+  }
+  40% {
+  opacity: 1;
+  }
+  80% {
+  -webkit-transform: translate(0, 20px);
+  opacity: 0;
+  }
+  100% {
+  opacity: 0;
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+  transform: translate(0, 0);
+  opacity: 0;
+  }
+  40% {
+  opacity: 1;
+  }
+  80% {
+  transform: translate(0, 20px);
+  opacity: 0;
+  }
+  100% {
+  opacity: 0;
+  }
+}
+
+/* end scroll down */
+
+/* About Section */
+
+#about{
+  height: 110vh;
+  padding-top: 4%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.aboutSection {
+  margin-top:0%;
+  padding-top: 1em;
+}
+
+.aboutSection .aboutText {
+  height:35vh;
+  padding-top: 1em;
+}
+
+.aboutSection1{
+ padding-left: 1.5%;
+}
+
+.aboutSection .paddingLeft{
+  padding-left: 5%;
+}
+
+.aboutSection .paddingRight{
+  padding-right: 5%;
+}
+
+
+.aboutSection p {
+  font-size: 1.2em;
+}
+
+.aboutSection .container-fluid:hover {
+  transform: scale(1.05);
+  transition: transform .8s;
+}
+
+@media (max-width: 768px) {
+  .aboutSection .container-fluid:hover {
+      transform: none;
+  }
+}
+
+#about img {
+    width: 14em;
+    height: 18em;
+    object-fit: scale-down;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-filter: sepia(50%) !important;
+    filter: grey !important;
+    transition: .8s;
+}
+
+#about img:hover {
+    filter: none !important;
+    -webkit-filter: sepia(0%) !important;
+}
+
+/* Experience */
+
+#experience {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  min-height: 72vh;
+  background: rgb(65,26,0);
+  background: -moz-linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  background: linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#411a00",endColorstr="#7d624e",GradientType=1);
+
+  padding-top: 5em;
+  display: block;
+  padding-bottom: 0;
+}
+
+#experienceExperienceContainer{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experienceContainer{
+  padding-top: 4%;
+  height:40vh;
+}
+
+.pluxbox{
+  border-bottom: solid 1px rgb(255, 115, 0);
+}
+
+#orangeHover:hover {
+  transition-duration:2s;
+  color:orange;
+}
+
+.card1 .card2{
+  margin-left: auto;
+}
+
+.card {
+  padding: 0;
+  width:18.5vw;
+  height:100% !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  transition: transform .5s;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.253);
+
+}
+
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.card-img-bottom {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-body a {
+  align-items: right !important;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+/* Technologies */
+
+#technologies {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  min-height: 57vh;
+  background: #eee;
+  padding-top: 5em;
+  display: block;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #technologies {
+      padding-bottom: 1em;
+  }
+}
+
+#technologies img {
+  width: 6em;
+  height: 6em;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 3em;
+  -webkit-filter: grayscale(100%) !important;
+  filter: grey !important;
+}
+
+#technologies img:hover {
+  filter: none !important;
+  -webkit-filter: grayscale(0%) !important;
+}
+
+@media (max-width: 768px) {
+  #technologies img {
+      filter: none !important;
+      -webkit-filter: none !important;
+  }
+}
+
+/* Modal */
+
+.modal-content{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#infoModal {
+  margin-left: 10%;
+  margin-top: 8%;
+}
+
+#infoModal li {
+  padding-top: 5%;;
+}
+
+#infoModal a, .form-group {
+  color: black;
+  font-size: 1.2em;
+}
+
+#modalSubmit:hover {
+  background-color:  rgb(255, 115, 0);
+}
+
+#modalText {
+  color:  rgb(255, 115, 0);
+  font-weight: bold;
+}
+
+#contact-form .form-group label {
+  color:  rgb(255, 115, 0);
+}
+
+#modalSubmit {
+  border-color: rgb(255, 115, 0);
+}
+
+#infoModal ul li{
+  margin-left :15%;
+  margin-top: 0%;
+}
+
+#infoModal li a i {
+  color:rgb(255, 115, 0);
+  padding-right: 5%;
+}
+
+#infoModal li a:hover {
+  color:rgb(255, 115, 0);
+}
+
+/* Footer */
+
+footer {
+  background: rgb(65,26,0);
+  background: -moz-linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  background: linear-gradient(135deg, rgba(65,26,0,1) 16%, rgba(87,44,14,0.9640231092436975) 58%, rgba(125,98,78,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#411a00",endColorstr="#7d624e",GradientType=1);
+  color:white;
+  padding: 2em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+footer a {
+  margin-left: 1%;
+  color: white;
+}
+
+footer a:hover {
+ color:rgb(255, 115, 0);
+}
+
+footer .btn {
+  margin-left: 1%;
+  margin-bottom: 1%;
+  border-color: white;
+  color:white;
+}
+
+footer .btn:hover {
+  background-color: rgb(255, 115, 0);
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  footer a {
+      display: none;
+  }
+}
+
+
